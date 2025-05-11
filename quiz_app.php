@@ -56,3 +56,15 @@ if (strtolower($user_answer) == $answer3) {
 } else {
     echo "Incorrect. The correct asnwer is " . $answer3 . "\n";
 }
+
+// Final results 
+echo "\nQuiz complete!\n";
+echo "You got " . $score . "out of 3 correct.\n";
+
+if ($score == 3) {
+    echo "Perfect score! Well done!\n";
+} elseif ($score >= 1) {
+    echo "Good try!\n";
+} else {
+    echo "Better luck next time!\n";
+}
