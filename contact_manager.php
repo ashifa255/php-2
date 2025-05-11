@@ -44,5 +44,24 @@ while (true) {
             echo "\nContact added successfully!\n";
 
             break;
+
+        case '2':
+            echo "\n-- Saved Contact ---\n";
+
+            if ($contact_count == 0) {
+                echo "No contacts saved yet.\n";
+
+                break;
+            }
+
+            if ($contact_count >= 1) {
+                echo "1. Name: " . $contact1_name . ", Phone: " . $contact1_phone . "\n";
+            }
+
+            if ($contact_count >= 2) {
+                echo "2. Name: " . $contact2_name . ", Phone: " . $contact2_phone . "\n";
+            }
+
+            break;
     }
 }
