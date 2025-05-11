@@ -63,5 +63,13 @@ while (true) {
             }
 
             break;
+
+        case '3':
+            echo "\nGoodbye!\n";
+            exit(0);
+
+
+        default:
+            echo "\nInvalid choice. Please try again.\n";
     }
 }
