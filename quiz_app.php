@@ -17,3 +17,16 @@ $score = 0;
 
 echo "Welcome to the Quiz App!\n";
 echo "Answer each question by entering a, b, or c.\n\n";
+
+// Question 1
+
+echo "Question 1 : " . $question1 . "\n";
+echo $option1 . "\n";
+echo "Your answer: ";
+$user_answer = trim(fgets(STDIN));
+if (strtolower($user_answer) == $answer1) {
+    echo "Correct!\n";
+    $score++;
+} else {
+    echo "Incorrect. The correct asnwer is " . $answer1 . "\n";
+}
