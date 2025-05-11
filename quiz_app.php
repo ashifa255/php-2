@@ -30,3 +30,16 @@ if (strtolower($user_answer) == $answer1) {
 } else {
     echo "Incorrect. The correct asnwer is " . $answer1 . "\n";
 }
+
+// Question 2
+
+echo "\nQuestion 2 : " . $question2 . "\n";
+echo $option2 . "\n";
+echo "Your answer: ";
+$user_answer = trim(fgets(STDIN));
+if (strtolower($user_answer) == $answer2) {
+    echo "Correct!\n";
+    $score++;
+} else {
+    echo "Incorrect. The correct asnwer is " . $answer2 . "\n";
+}
